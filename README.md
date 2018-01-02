@@ -10,12 +10,13 @@ If you want to be constantly looking for stories, you can use the software as is
 
 Once the AIY kit and app are listening to you, you can use the following voice commands:
 
-"Once upon a time" - start recording a story
-"Tell me a story" - start recording a story
-"The end" - stop recording and email a transcript
-"AIY turn off" - turn off the device (requires power cycle to restart)
+- "Once upon a time" - start recording a story
+- "Tell me a story" - start recording a story
+- "The end" - stop recording and email a transcript
+- "AIY turn off" - turn off the device (requires power cycle to restart)
 
 All recorded stories are saved as .wav files and as .txt files. The files are saved to the '/home/pi/Documents' directory by default. If you want to change that, you'll need to edit the python source.
+
 ## Privacy Note
 
 This app uses Google's Cloud Speech API to transcribe what you say into text, then email to an email address you provide. This has all of the privacy risks that you might expect, so please use it responsibly.
@@ -26,6 +27,12 @@ Set up your AIY kit according to the instructions. Once that's done, set up the 
 
 Instructions for that can be found here:
 https://aiyprojects.withgoogle.com/voice/#project-overview
+
+Note that the AIY Rasbian image may have an out-of-date version of the AIY library. To update that, do the following:
+
+    cd /home/pi/AIY-voice-kit-python
+    git pull origin voicekit
+
 
 # e-mail setup
 
