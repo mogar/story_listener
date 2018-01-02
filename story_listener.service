@@ -1,0 +1,9 @@
+Description=Story Listener and Recorder
+
+[Service]
+ExecStart=/bin/bash -c /home/pi/Documents/story_listener/story_starter.sh
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
