@@ -2,6 +2,10 @@
 
 """Play a wave file using AIY. Mostly this is to play back a story from the story_recorder"""
 
+import os
+
+aiy_path = os.environ["AIYPATH"]
+os.sys.path.append(aiy_path)
 import aiy.audio
 import argparse
 
